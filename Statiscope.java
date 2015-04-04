@@ -10,8 +10,8 @@
  *    A plan is to replace these proprietary methods (tStats, tDistr, chi2Stats, 
  *    chi2Distr) using functions from Octave or R or some
  *    other statistics package under a FOSS licence.
- *    Donations are welcome to PayPal mikaelb@df.lth.se.
- *    The source code is at http://www.df.lth.se/~mikaelb/statiscope/
+ *    Donations are welcome to PayPal mikael.bonnier@gmail.com.
+ *    The source code is at http://www.df.lth.se.orbin.se/~mikaelb/statiscope/
  *
  *    @version        1.0.9
  *    @author         Mikael O. Bonnier
@@ -32,8 +32,8 @@
 //                  SWEDEN
 //
 // Or use my internet addresses:
-//                  mikaelb@df.lth.se
-//                  http://www.df.lth.se/~mikaelb/
+//                  mikael.bonnier@gmail.com
+//                  http://www.df.lth.se.orbin.se/~mikaelb/
 //              _____
 //             /   / \
 // ***********/   /   \***********
@@ -152,18 +152,16 @@ public class Statiscope extends Applet implements Runnable
       System.gc();
 
       return "Statiscope 1.0beta8\n" +
-             "Copyright © 1996-2012 Mikael O. Bonnier, Lund, Sweden\n" +
+             "Copyright Â© 1996-2012 Mikael O. Bonnier, Lund, Sweden\n" +
              "All rights reserved\n" +
-             "Internet e-mail: mikaelb@df.lth.se\n" +
-             "WWW home page: http://www.df.lth.se/~mikaelb/\n\n" +
-             "This product is licenced to:\n" +
-             "Mikael O. Bonnier\n\n" + // <---
+             "Internet e-mail: mikael.bonnier@gmail.com\n" +
+             "WWW home page: http://www.df.lth.se.orbin.se/~mikaelb/\n\n" +
              "Operating system architecture: " + System.getProperty("os.arch") + "\n" +
              "Operating system name: " + System.getProperty("os.name") + "\n" +
              "Java vendor: " + System.getProperty("java.vendor") + "\n" +
              "Java version number: " + System.getProperty("java.version") + "\n" +
              "Free memory: " + Runtime.getRuntime().freeMemory()/1024 + " KB\n" +
-             "Screen size: " + dim.width + "×" + dim.height + "\n" +
+             "Screen size: " + dim.width + "Ã—" + dim.height + "\n" +
              "Directory: " + System.getProperty("user.dir") + "\n\n" +
              "DISCLAIMER\n" +
              "THIS PROGRAM IS USED AT YOUR OWN RISK. IT\n" +
@@ -197,8 +195,8 @@ public class Statiscope extends Applet implements Runnable
    public void paint(Graphics g)
    {
       if(mbSite)
-         g.drawString("Statiscope: Contact Mikael O. Bonnier, mikaelb@df.lth.se,"
-            + " http://www.df.lth.se/~mikaelb/ for licensing info.", 0, 40);
+         g.drawString("Statiscope: Contact Mikael O. Bonnier, mikael.bonnier@gmail.com,"
+            + " http://www.df.lth.se.orbin.se/~mikaelb/ for licensing info.", 0, 40);
    }
 
    public void init() 
@@ -232,7 +230,7 @@ public class Statiscope extends Applet implements Runnable
 
       /*
       if(!mbApp && !getDocumentBase().toString().substring(0, 30).equals(  // <---
-         "http://www.df.lth.se/~mikaelb/")) // <---
+         "http://www.df.lth.se.orbin.se/~mikaelb/")) // <---
       {
          mbSite = true;
          return;
@@ -1518,7 +1516,7 @@ class StatCanvas extends Canvas
 
          /*
          if(!a.mbApp && !a.getDocumentBase().toString().substring(0, 30).equals( // <---
-            "http://www.df.lth.se/~mikaelb/")) // <---
+            "http://www.df.lth.se.orbin.se/~mikaelb/")) // <---
             mbSite = true;
             */
 
