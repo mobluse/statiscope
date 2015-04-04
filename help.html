@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!--Copyright (C) 1996-1997 by Mikael Bonnier, Lund, Sweden.-->
+  <title>Help for Statiscope</title>
+  <link rev="made" href="mailto:mikaelb@df.lth.se">
+</head>
+<body style="background-color: rgb(192, 192, 192);" vlink="#800080">
+<!-- counter-ord-lang -->
+<p><a href="help-sve.html"><img src="../images/sve1.gif" alt="[Svenska]"
+ name="sve" align="right" border="0" height="28" width="31"></a><a
+ href="help.html"><img src="../images/enu1.gif" alt="[English]"
+ name="enu" align="right" border="0" height="28" width="31"></a></p>
+<h2>Statiscope</h2>
+<p>
+</p>
+<hr>
+<h3>Help for Statiscope 1.0beta8 <a href="statiscope.html">Applet</a>
+and Application</h3>
+<dl>
+  <dt><b>Getting Started</b></dt>
+  <dd>At the text boxes near by the <b>Simulate</b> button, enter 170
+in the <b>Number</b> box, 90 in the <b>Mean</b> box, and 30 in the <b>Std.
+dev.</b> box. Click the <b>Simulate</b> button. Click through the
+radio buttons <b>Distribute</b>, <b>Probability mass</b>, <i>etc</i>.
+Click the button <b>Sort</b> to sort and then on <b>Clear data</b> to
+empty the list. The <b>Stop</b> button is used to interrupt lengthy
+operations.</dd>
+  <dt><a name="dataentry"></a><b>Data Entry</b></dt>
+  <dd>Enter a number in the text box <b>Data/Location</b> and press
+Enter. Continue to enter a few numbers. Decimal numbers require a point
+as a decimal separator. You can enter several numbers at a time by
+separating them with commas (or space).<br>
+Try <i>e.g.</i> this list: 5, 3.5, 9, 3.5<br>
+You can mark it and copy it with Ctrl+C in Windows (Cmd+C in Macintosh,
+only marking in X-windows), click the <b>Data/Location</b> box and
+paste the clip with Ctrl+V in Windows (Cmd+V in Macintosh, the middle
+mousebutton in X-windows) and press Enter. This is regrettably the only
+method you can use to copy and paste in a Java applet.<br>
+    <br>
+It is possible to delete numbers in the list by clicking them and
+pressing the Delete or Backspace key. You can also insert numbers into
+the list by clicking where you want the new number to appear and
+pressing the I key. (Insert would have been more appropriate but it
+regrettably won't work in Java.) When you are in the list you can move
+up and down by pressing the up and down arrow keys, but this also works
+when you are in the text box <b>Data/Location</b>. If you edit a value
+and press Enter, the value is updated. To add new values you must be at
+the end of the list.<br>
+    <br>
+In the application you can also use the functions of the <b>File</b>
+menu. <b>Open</b> lets you choose a file to load. <b>Save</b> is used
+to store the data to a file.<br>
+    <br>
+Another method of getting data into the program is to write an URL in
+the <b>Data/Location</b> box. You can open a new browser and bring up
+the page:<br>
+    <a href="http://www.maths.lth.se/matstat/datalib/" target="_blank">http://www.maths.lth.se/matstat/datalib/</a><br>
+(Click the link, and a new browser window is opened automatically.)
+Click to bring up foton.dat, copy the URL from the browser and paste it
+into Statiscope's <b>Data/Location</b> box and press Enter. Now the
+first column will be read into the program. If you want to load another
+column, enter the URL comma the column number.<br>
+    <i>E.g.</i> http://www.maths.lth.se/matstat/datalib/foton.dat,2
+will read the second column.<br>
+    <br>
+A special link can be used to get Statiscope to load your data
+automatically. This is explained on the <a href="urlencoder.html"><b>Statiscope
+URL Encoder</b></a> page.<br>
+    <br>
+The last method, simulation, has already been described at "Getting
+Started". The simulation yield normally distributed numbers.</dd>
+  <dt><b>Statistical Charts</b></dt>
+  <dd>By clicking the radio buttons at the left, the corresponding
+statistical chart is showed. There are real charts and there are text
+diagrams. The scales are automatically calculated, but the ticks on the
+x-axes can be manipulated by pressing the &lt; and &gt; buttons. The
+distance between the ticks is always 1, 2, or 5 times a power of ten.
+If the check box <b>Rel.</b> is checked the corresponding relative
+function is showed instead of the absolute. If the check box <b>Theo.</b>
+is checked the corresponding theoretical function based on the normal
+distribution with the same mean and standard deviation as the measured
+data is showed.</dd>
+  <dt><b>Distribution</b></dt>
+  <dd>This shows the empirical distribution function, that is the
+height of the graph for a certain x-value is the probability that a
+value will be less than or equal to that value.</dd>
+  <dt><b>Probability mass</b></dt>
+  <dd>This shows the probability mass function, that is the number of
+data points with a certain x-value. If <b>Rel.</b> is checked it is
+instead the probability of the value. This is a bar diagram.</dd>
+  <dt><b>Density</b></dt>
+  <dd>This shows the density function, that is the number of data
+points that fall within the different intervals which the x-axis is
+divided into. If <b>Rel.</b> is checked it is instead the probability
+of falling within the interval is showed. This is a histogram.</dd>
+  <dt><b>Box plot</b></dt>
+  <dd>This shows a box plot over the data. The vertical lines in the
+box plot correspond to - from left - minimum, 1st quartile, median (or
+2nd quartile), 3rd quartile, and maximum. This gives a summary of the
+data.</dd>
+  <dt><b>Stem and leaf</b></dt>
+  <dd>This shows a stem and leaf diagram over the data. It shows a kind
+of lying histogram. It works best for positive integers when the
+difference between maximum and minimum is below a few hundreds. It's
+easiest explained by an example.</dd>
+  <dt><b>Data listing</b></dt>
+  <dd>This is the cat among the ermines. It simply shows the same data
+as in the list. The purpose of this is that you can copy data from this
+print-out and paste it into an editor, to perhaps finally publish your
+data on the net.</dd>
+  <dt><b>Number</b></dt>
+  <dd>The number of data points.</dd>
+  <dt><b>Sum</b></dt>
+  <dd>The sum of all data points.</dd>
+  <dt><b>Mean</b></dt>
+  <dd>The mean, or empirical expectation value, that is the sum of the
+data points divided by the number of data points.</dd>
+  <dt><b>Sam. std. dev.</b></dt>
+  <dd>The sample standard deviation, this is the measure of the spread
+in the data which is used most often. Especially when the data is a
+sample from a larger or infinite population. It is the root of the sum
+of the squares of the differences between the data points and the mean
+divided by the number of data points less one.</dd>
+  <dt><b>Pop. std. dev.</b></dt>
+  <dd>The population standard deviation, is used if the data is
+collected from the whole population. It's seldomly used in practice. It
+is root of the sum of the squares of the differences between the data
+points and the mean divided by the number of data points.</dd>
+  <dt><b>Minimum</b></dt>
+  <dd>The least of the data points.</dd>
+  <dt><b>Quartile 1</b></dt>
+  <dd>The 1st quartile, that is the median of the data points between
+the least value and the median of all data points.</dd>
+  <dt><b>Median</b></dt>
+  <dd>The median, that is if you sort the data it is the middle value
+or the mean of the two middle values, depending on if the number is odd
+or even.</dd>
+  <dt><b>Quartile 3</b></dt>
+  <dd>The 3rd quartile, that is the median of the data points between
+the median of all data points and the largest value.</dd>
+  <dt><b>Maximum</b></dt>
+  <dd>The largest value.</dd>
+  <dt><b>Confidence Interval and Hypothesis Testing</b></dt>
+  <dd>The percentage of the confidence intervals does only affect the
+confidence intervals and not the hypothesis testings. But the radio
+buttons <b>Lower</b>, <b>Middle</b>, and <b>Upper</b> affects both
+the confidence intervals and the hypothesis testings.<br>
+[t- and Chi-2-distributions are used. The algorithms for Chi-2 will
+probably need some improvement.]</dd>
+  <dt><b>Confidence Interval</b></dt>
+  <dd>Confidence interval in general means that the probability that
+the real value should be within the interval is equal to the <b>Confidence</b>
+percentage (<i>e.g.</i> 95%).<br>
+    <b>Mean</b> is the confidence interval for the standard deviation.
+You can determine lower, two-sided, and upper confidence intervals, by
+selecting <b>Lower</b>, <b>Middle</b>, and <b>Upper</b>,
+respectively.</dd>
+  <dt><b>Hypothesis Testing</b></dt>
+  <dd>By hypothesis testing you can examine if a certain hypothesis
+should be accepted or rejected. If the alternative hypothesis is used
+as a new hypothesis and is rejected, the former hypothesis is
+statistically proved.<br>
+The hypothesis is H<sub>0</sub> and the alternative hypothesis is H<sub>1</sub>.
+    <pre>If<br>  H<sub>0</sub>: real value &lt;= hypothesis,  H<sub>1</sub>: real value &gt; hypothesis,<br>use <b>Lower</b>.<br>If<br>  H<sub>0</sub>: real value = hypothesis,   H<sub>1</sub>: real value &lt;&gt; hypothesis,<br>use <b>Middle</b>.<br>If<br>  H<sub>0</sub>: real value &gt;= hypothesis,  H<sub>1</sub>: real value &lt; hypothesis,<br>use <b>Upper</b>.<br>   </pre>
+    <p>The hypothesis is rejected if the p-value is less than a certain
+fixed level <i>e.g.</i> 0.05, called the alpha-level. The higher the
+level the stricter the test. The hypotheses is entered in the boxes
+below <b>Hypothesis</b> and the p-value is showed in the boxes below <b>P-value</b>.</p>
+  </dd>
+  <dt><b>Right Browser</b></dt>
+  <dd>For the applet Netscape Navigator 3.01 is recommended, earlier
+versions have had problems with the behaviour of the list box. If
+certain controls should not be painted you can try to minimize the
+browser and restore it again. An alternative browser is Microsoft
+Internet Explorer 3.0.</dd>
+  <dt><b>Comments Welcome</b></dt>
+  <dd>Bug reports and suggestions for improvements on the program
+Statiscope and this documentation is gratefully received by <a
+ href="../rendezvous/rendezvous-enu.cgi">Mikael Bonnier</a>.</dd>
+  <dt><b>DISCLAIMER</b></dt>
+  <dd>THIS PROGRAM IS USED AT YOUR OWN RISK. IT SHOULD SPECIFICALLY NOT
+BE USED IN HIGH RISK ACTIVITY SUCH AS DIAGNOSIS AND TREATMENT OF
+PATIENTS, OR THE OPERATION OF NUCLEAR FACILITIES OR WEAPONS SYSTEMS.</dd>
+</dl>
+<p><b>The program Statiscope and this documentation is Copyright
+&copy; 1996-1997 by Mikael Bonnier, Lund, Sweden. All rights
+reserved.</b></p>
+<address>WWW home page: <a href="http://www.df.lth.se/%7Emikaelb/"
+ target="_top">http://www.df.lth.se/~mikaelb/</a></address>
+<p>
+</p>
+<hr>
+<table align="right" border="1">
+  <tbody>
+    <tr>
+      <td bgcolor="#808080">
+      <p><a href="http://hem.passagen.se/orbinweb/index-enu.html"
+ target="links"><font face="Arial,Helvetica"><b>Orbin</b></font></a><br>
+      <font face="Arial,Helvetica" size="-2">Web Technology</font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

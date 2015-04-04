@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!--Copyright (C) 1997 by Mikael Bonnier, Lund, Sweden.-->
+  <title>Statiscope URL Encoder</title>
+  <link rev="made" href="mailto:mikaelb@df.lth.se">
+</head>
+<body style="background-color: rgb(192, 192, 192);" vlink="#800080">
+<!-- counter-ord-lang -->
+<p><a href="urlencoder-sve.html"><img src="../images/sve1.gif"
+ alt="[Svenska]" name="sve" align="right" border="0" height="28"
+ width="31"></a><a href="urlencoder.html"><img src="../images/enu1.gif"
+ alt="[English]" name="enu" align="right" border="0" height="28"
+ width="31"></a></p>
+<h2>Statiscope URL Encoder</h2>
+<p>
+</p>
+<hr>
+<h3>URL Encoder for Statiscope</h3>
+<dl>
+  <dt><b>Links that loads data</b></dt>
+  <dd>This JavaScript program makes links to Statiscope that cause it
+to start with data loaded. You enter what you would have written in
+Statiscope's <a href="help.html#dataentry"><b>Data/Location</b></a>
+box in the text box below, then click <b>Make link</b>, and a link to
+Statiscope will appear. You can include this link in your own web-pages.<br>
+    <br>
+  </dd>
+</dl>
+<p><b>Examples:</b></p>
+<ul>
+  <li>A list: <a
+ href="http://www.df.lth.se/%7Emikaelb/statiscope/statiscope.html?url=5%2C3.5%2C9%2C3.5"
+ target="content">5,3.5,9,3.5</a></li>
+  <li>A file on Internet: <a
+ href="http://www.df.lth.se/%7Emikaelb/statiscope/statiscope.html?url=http%3A%2F%2Fwww.maths.lth.se%2Fmatstat%2Fdatalib%2Ffoton.dat%2C2"
+ target="content">foton.dat, 2nd column</a></li>
+</ul>
+<p>
+<script language="JavaScript"><!--
+document.writeln('<FORM NAME="search" ACTION="urlencoder.html" METHOD="get">');
+var sURL;
+if(location.search.length != 0)
+{
+   var nStartIndex = location.search.indexOf("url=");
+   if(nStartIndex != -1)
+   {
+      nStartIndex += 4;
+      sURL = location.search.substring(nStartIndex, location.search.length);
+      sURL = unescape(sURL);
+   }
+}
+else
+   sURL = "http://";
+
+document.writeln('<B>Data/Location to translate:</B> <INPUT NAME="url" TYPE="text" SIZE="30" VALUE="' + sURL + '">');
+document.writeln('<INPUT TYPE="submit" VALUE="  Make link  ">');
+document.writeln('<INPUT TYPE="button" VALUE="  Clear  " OnClick="this.form.url.value=\'http://\'">');
+document.writeln('</FORM>');
+if(location.search.length != 0)
+{
+   document.writeln('<B>URL:</B> <A HREF="http://www.df.lth.se/~mikaelb/statiscope/statiscope.html' + location.search + '" TARGET="content">http://www.df.lth.se/~mikaelb/statiscope/statiscope.html' + location.search + "</A><BR>");
+}
+// --></script></p>
+<p><b>Copyright &copy; 1997 by Mikael Bonnier, Lund, Sweden. All
+rights reserved.</b></p>
+<p>
+</p>
+<hr>
+<table align="right" border="1">
+  <tbody>
+    <tr>
+      <td bgcolor="#808080">
+      <p><a href="http://hem.passagen.se/orbinweb/index-enu.html"
+ target="links"><font face="Arial,Helvetica"><b>Orbin</b></font></a><br>
+      <font face="Arial,Helvetica" size="-2">Web Technology</font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+[<a href="http://www.df.lth.se/%7Emikaelb/statiscope/statiscope.html">Statiscope</a>]
+[<a href="http://www.df.lth.se/%7Emikaelb/java.html">Java
+applets</a>] [<a href="http://www.df.lth.se/%7Emikaelb/index.html"
+ target="_top">Mikael
+Bonnier's home page</a>]
+</body>
+</html>

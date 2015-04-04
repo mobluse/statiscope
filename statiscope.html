@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!--Copyright (C) 1996 by Mikael Bonnier, Lund, Sweden.-->
+  <title>Statiscope</title>
+  <link rev="made" href="mailto:mikaelb@df.lth.se">
+  <meta name="description"
+ content="Statiscope presents summarizing data and descriptive statistical charts. In the applet you can
+enter data manually or download data over the Internet. Charts included: Distribution,
+Probability mass, Density, Box plot, Stem &amp; leaf. Other features such as hypothesis testing
+and calculation of confidence intervals are also included.">
+  <meta name="keywords"
+ content="summarizing data,descriptive statistical charts,distribution,probability mass,density,box plot,stem and leaf,hypothesis testing,confidence intervals">
+</head>
+<body style="background-color: rgb(192, 192, 192);" vlink="#800080">
+<!-- counter-ord-lang -->
+<p><a href="statiscope-sve.html"><img src="../images/sve1.gif"
+ alt="[Svenska]" name="sve" align="right" border="0" height="28"
+ width="31"></a><a href="statiscope.html"><img src="../images/enu1.gif"
+ alt="[English]" name="enu" align="right" border="0" height="28"
+ width="31"></a></p>
+<h2>Statiscope</h2>
+<p>
+</p>
+<hr><a name="applet"></a>
+<script language="JavaScript"><!--
+document.writeln('<APPLET ARCHIVE="Statiscope.zip" CODE="Statiscope.class" WIDTH="575" HEIGHT="435">'
++ '<PARAM NAME="bgcolor" VALUE="#C0C0C0">'
++ '<PARAM NAME="fgcolor" VALUE="#000000">'
++ '<PARAM NAME="urlcgi" VALUE="true">');
+if(location.search.length != 0)
+{
+   var nStartIndex = location.search.indexOf("url=");
+   if(nStartIndex != -1)
+   {
+      nStartIndex += 4;
+      var sURL = location.search.substring(nStartIndex, location.search.length);
+      sURL = unescape(sURL);
+      document.writeln('<PARAM NAME="url" VALUE="' + sURL + '">');
+      document.writeln(sURL);
+   }
+}
+document.writeln('<IMG SRC="statiscope.gif" WIDTH="575" HEIGHT="435" ALT="Statiscope">'
++ '</APPLET>');
+// --></script>
+<hr>
+<h3>Statiscope 1.0beta8</h3>
+<dl>
+  <dt><a href="help.html" target="help"><b>Help</b></a></dt>
+  <dd>Here you will find the detailed documentation.</dd>
+  <dt><b>Description</b></dt>
+  <dd>Statiscope presents summarizing data and descriptive statistical
+charts. In the applet you can enter data manually or download data over
+the Internet. Charts included: Distribution, Probability mass, Density,
+Box plot, Stem &amp; leaf. Other features such as hypothesis testing
+and calculation of confidence intervals are also included. The user
+interface is responsive and friendly, <i>e.g.</i> Statiscope
+introduces a new funny way of changing the scale. It is intended both
+for people learning the concepts of statistics and for practical use by
+researchers of various kinds. A good thing is that it lets people share
+data and do independent investigations. It is designed to look like an
+oscilloscope but is concerned with statistics, therefore the name of
+Statiscope. Statiscope is also available as a standalone application
+that has Open and Save menu options. This application runs on most
+common platforms.</dd>
+  <dt><b>Getting Started</b></dt>
+  <dd>At the text boxes near by the <b>Simulate</b> button, enter 170
+in the <b>Number</b> box, 90 in the <b>Mean</b> box, and 30 in the <b>Std.
+dev.</b> box. Click the <b>Simulate</b> button. Click through the
+radio buttons <b>Distribute</b>, <b>Probability mass</b>, <i>etc</i>.
+Click the button <b>Sort</b> to sort and then on <b>Clear data</b> to
+empty the list. The <b>Stop</b> button is used to interrupt lengthy
+operations.</dd>
+  <dt><b>License Info</b></dt>
+  <dd>You may freely use Statiscope from this site. It's not allowed to
+install it on another web site. Statiscope 1.0 stand-alone application
+can open and save data files locally and over a LAN, and also get data
+over the Internet. Statiscope 2.0 will have support for more
+distributions.</dd>
+  <dt><b>Comments Welcome</b></dt>
+  <dd>Bug reports, and suggestions for improvements on the program
+Statiscope and this documentation is gratefully received by <a
+ href="../rendezvous/rendezvous-enu.cgi">Mikael Bonnier</a>.</dd>
+  <dt><b>DISCLAIMER</b></dt>
+  <dd>THIS PROGRAM IS USED AT YOUR OWN RISK. IT SHOULD SPECIFICALLY NOT
+BE USED IN HIGH RISK ACTIVITY SUCH AS DIAGNOSIS AND TREATMENT OF
+PATIENTS, OR THE OPERATION OF NUCLEAR FACILITIES OR WEAPONS SYSTEMS.</dd>
+</dl>
+<p><b>The program Statiscope and this documentation is Copyright
+&copy; 1996-1997 by Mikael Bonnier, Lund, Sweden. All rights
+reserved.</b></p>
+<p>
+</p>
+<hr>
+<table align="right" border="1">
+  <tbody>
+    <tr>
+      <td bgcolor="#808080">
+      <p><a href="http://hem.passagen.se/orbinweb/index-enu.html"
+ target="links"><font face="Arial,Helvetica"><b>Orbin</b></font></a><br>
+      <font face="Arial,Helvetica" size="-2">Web Technology</font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+[<a href="http://www.df.lth.se/%7Emikaelb/java.html">Java
+applets</a>] [<a href="http://www.df.lth.se/%7Emikaelb/index.html"
+ target="_top">Mikael
+Bonnier's home page</a>]
+</body>
+</html>
