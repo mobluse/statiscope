@@ -54,13 +54,13 @@ if(location.search.length != 0)
 else
    sURL = "http://";
 
-document.writeln('<B>Data/Location to translate:</B> <INPUT NAME="url" TYPE="text" SIZE="30" VALUE="' + sURL + '">');
+document.writeln('<B>Data/Location to translate:</' + 'B> <INPUT NAME="url" TYPE="text" SIZE="30" VALUE="' + sURL + '">');
 document.writeln('<INPUT TYPE="submit" VALUE="  Make link  ">');
 document.writeln('<INPUT TYPE="button" VALUE="  Clear  " OnClick="this.form.url.value=\'http://\'">');
-document.writeln('</FORM>');
+document.writeln('</' + 'FORM>');
 if(location.search.length != 0)
 {
-   document.writeln('<B>URL:</B> <A HREF="http://www.df.lth.se/~mikaelb/statiscope/statiscope.html' + location.search + '" TARGET="content">http://www.df.lth.se/~mikaelb/statiscope/statiscope.html' + location.search + "</A><BR>");
+   document.writeln('<B>URL:</' + 'B> <A HREF="index.html' + location.search + '" TARGET="content">index.html' + location.search + "</' + 'A><BR>");
 }
 // --></script></p>
 <p><b>Copyright &copy; 1997 by Mikael Bonnier, Lund, Sweden. All
