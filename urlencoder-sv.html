@@ -56,13 +56,13 @@ if(location.search.length != 0)
 else
    sURL = "http://";
 
-document.writeln('<B>Data/Location att översätta:</B> <INPUT NAME="url" TYPE="text" SIZE="30" VALUE="' + sURL + '">');
+document.writeln('<B>Data/Location att översätta:</' + 'B> <INPUT NAME="url" TYPE="text" SIZE="30" VALUE="' + sURL + '">');
 document.writeln('<INPUT TYPE="submit" VALUE="Tillverka länk">');
 document.writeln('<INPUT TYPE="button" VALUE="  Radera  " OnClick="this.form.url.value=\'http://\'">');
-document.writeln('</FORM>');
+document.writeln('</' + 'FORM>');
 if(location.search.length != 0)
 {
-   document.writeln('<B>URL:</B> <A HREF="index-sv.html' + location.search + '" TARGET="content">index-sv.html' + location.search + "</A><BR>");
+   document.writeln('<B>URL:</' + 'B> <A HREF="index-sv.html' + location.search + '" TARGET="content">index-sv.html' + location.search + "</' + 'A><BR>");
 }
 // --></script></p>
 <p><b>Copyright &copy; 1997 by Mikael Bonnier, Lund, Sweden. All
